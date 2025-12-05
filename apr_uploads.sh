@@ -16,9 +16,9 @@ echo "Database: $DB_PATH"
 echo "Backup directory: $BACKUP_DIR"
 echo
 
-# Export users_uploadedfile → uploaded_files.csv
-echo "Exporting table: users_uploadedfile → $UPLOADED_FILES_CSV"
-sqlite3 -header -csv "$DB_PATH" "SELECT * FROM uploader_uploadedfile;" > "$UPLOADED_FILES_CSV"
+# Export uploader_uploadstatus → uploaded_files.csv
+echo "Exporting table: uploader_uploadstatus → $UPLOADED_FILES_CSV"
+sqlite3 -header -csv "$DB_PATH" "SELECT * FROM uploader_uploadstatus;" > "$UPLOADED_FILES_CSV"
 
 echo
 echo "✅ Export completed successfully at $(date +"%Y-%m-%d %H:%M:%S")"
