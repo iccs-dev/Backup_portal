@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Paths
-DB_PATH="/home/iccsadmin/ishita/Manual_Attendance/db.sqlite3"
+DB_PATH="/home/iccsadmin/ishita/Meta_Uploads/db.sqlite3"
 BACKUP_DIR="/home/iccsadmin/Backup_Portal/xyz"
 
 # Create backup directory if it doesn't exist
